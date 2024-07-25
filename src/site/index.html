@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <div class="container">
+        <canvas></canvas>    
+
+        <div class="controle">
+            <ul class="atual">
+                <li>X:&nbsp;<span id="spanX"></span></li>
+                <li>Y:&nbsp;<span id="spanY"></span></li>
+                <li>W:&nbsp;<span id="spanW"></span></li>
+                <li>H:&nbsp;<span id="spanH"></span></li>                
+            </ul>
+            <ul id="listaAcoes">
+                <li>
+                    <select class="jsn-tipo-acoes" name="jsnTipoAcoes" id="jsnTipoAcoes">
+                    </select>
+                </li>
+                <li class="jsn-acao" id="addQuadro" >Novo Quadro</li>
+                <!-- <li class="jsn-acao" id="addColisao" >Adicionar Colisão</li> -->
+                <!-- <li class="jsn-acao" id="addAtaque" >Adicionar Ataque</li> -->
+                <li class="jsn-acao" id="limparTudo" >Limpar tudo</li>                
+                <!-- <li class="jsn-separador">&nbsp;</li> -->
+                <li class="jsn-acao" id="salvar" >Salvar</li>
+                <li class="jsn-separador">&nbsp;</li>
+            </ul>
+            <ul id="listaQuadro"></ul>
+        </div>
+    </div>    
+
+    <div id="modalFundo">&nbsp;</div>
+    <div id="modal">
+        <div class="conteudo">
+            <div class="titulo">Mensagem</div>
+            <div class="mensagem" id="conteudoMensagem" ></div>
+            
+            <div id="dvPesoColisao" class="pesoColisao ocultar">
+                <span>Selecione o peso da caixa de colisão:</span>
+             <label> peso: 5 <input type="radio" name="colisaoPeso" id="peso05" value="5"></label>    
+             <label> peso: 3 <input type="radio" name="colisaoPeso" id="peso03" value="3"></label>    
+             <label> peso: 1 <input type="radio" name="colisaoPeso" id="peso01" value="1"></label>    
+            </div>
+            
+            <div class="acoes">
+                <input type="button" value="Sim" class="jsn-botao" id="modalExecutar">
+                <input type="button" value="Não" class="jsn-botao fecharModal" id="fecharModalNao">
+                <!-- <input type="button" value="Ok"  class="jsn-botao fecharModal" id="fecharModalOk"> -->
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
+
+<script src="script.js" ></script>
