@@ -47,6 +47,10 @@
 
 {"acao":"foto-selecao","valor":35},
 {"acao":"foto-vitoria","valor":36},
-{"acao":"foto-perda","valor":37}
+{"acao":"foto-perda","valor":37},
+
+{"acao":"virar-01","valor":38},
+{"acao":"virar-02","valor":39},
+{"acao":"virar-03","valor":40}
 
 ]}

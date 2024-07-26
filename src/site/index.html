@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="assets/style/w3f.css">
 
 </head>
 <body>
     <div class="container">
-        <canvas></canvas>    
+        <canvas id="canvas"></canvas>    
 
         <div class="controle">
             <ul class="atual">
@@ -19,6 +19,11 @@
                 <li>W:&nbsp;<span id="spanW"></span></li>
                 <li>H:&nbsp;<span id="spanH"></span></li>                
             </ul>
+            <!-- <div>
+                <label for="file">File</label>
+                    <input id="file" name="file" type="file" />
+                    <button onclick="uploadImage()">Upload</button>
+            </div> -->
             <ul id="listaAcoes">
                 <li>
                     <select class="jsn-tipo-acoes" name="jsnTipoAcoes" id="jsnTipoAcoes">
@@ -29,10 +34,14 @@
                 <!-- <li class="jsn-acao" id="addAtaque" >Adicionar Ataque</li> -->
                 <li class="jsn-acao" id="limparTudo" >Limpar tudo</li>                
                 <!-- <li class="jsn-separador">&nbsp;</li> -->
-                <li class="jsn-acao" id="salvar" >Salvar</li>
-                <li class="jsn-separador">&nbsp;</li>
+                
             </ul>
             <ul id="listaQuadro"></ul>
+            <ul >
+                <li class="jsn-acao" id="salvar" >
+                    <input type="button" class="jsn-botao-salvar" value="Salvar">
+                </li>
+            </ul>
         </div>
     </div>    
 
@@ -43,10 +52,12 @@
             <div class="mensagem" id="conteudoMensagem" ></div>
             
             <div id="dvPesoColisao" class="pesoColisao ocultar">
-                <span>Selecione o peso da caixa de colisão:</span>
-             <label> peso: 5 <input type="radio" name="colisaoPeso" id="peso05" value="5"></label>    
+                <span>Selecione o peso da caixa de colisão:</span><br>
+             <label> peso: 1 <input type="radio" name="colisaoPeso" id="peso01" value="1"></label>
+             <br>    
+             <label> peso: 2 <input type="radio" name="colisaoPeso" id="peso02" value="2"></label>    
+             <br>
              <label> peso: 3 <input type="radio" name="colisaoPeso" id="peso03" value="3"></label>    
-             <label> peso: 1 <input type="radio" name="colisaoPeso" id="peso01" value="1"></label>    
             </div>
             
             <div class="acoes">
@@ -59,4 +70,4 @@
 </body>
 </html>
 
-<script src="script.js" ></script>
+<script src="assets/scripts/w3f.js" ></script>
